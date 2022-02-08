@@ -11,8 +11,8 @@ services:
     tty: true
     volumes:
       - ./server:/var/www
-      - know_it_app_node_modules:/var/www/server/node_modules
-      - know_it_app_vendor:/var/www/server/vendor
+      - know_it_app_node_modules:/var/www/node_modules
+      - know_it_app_vendor:/var/www/vendor
 
   nginx:
     image: nginx
