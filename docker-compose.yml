@@ -10,9 +10,9 @@ services:
     build: ./docker/app
     tty: true
     volumes:
-      - ./server:/var/www
-      - know_it_all_node_modules:/var/www/node_modules
-      - know_it_all_vendor:/var/www/vendor
+      - ./server:/var/www/know_it_all
+      - know_it_all_node_modules:/var/www/know_it_all/node_modules
+      - know_it_all_vendor:/var/www/know_it_all/vendor
 
   nginx:
     image: nginx
@@ -20,7 +20,7 @@ services:
     ports:
       - 80:80
     volumes:
-      - ./server:/var/www
+      - ./server:/var/www/know_it_all
       - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
     depends_on:
       - app
