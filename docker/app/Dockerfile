@@ -1,4 +1,4 @@
-FROM php:7.4.9-fpm
+FROM php:8.1-rc-fpm-bullseye
 COPY php.ini /usr/local/etc/php/
 
 RUN apt update \
@@ -11,7 +11,7 @@ RUN docker-php-ext-enable xdebug
 
 #Node.js install
 RUN apt install -y gnupg
-RUN curl -sL https://deb.nodesource.com/setup_13.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_17.x | bash -
 RUN apt install -y nodejs
 
 #Composer install バージョン1指定
