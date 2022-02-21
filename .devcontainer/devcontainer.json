@@ -7,14 +7,12 @@
         "terminal.integrated.shell.linux": null
     },
     "extensions": [
-        "mikestead.dotenv",
-        "felixfbecker.php-debug",
-        "neilbrayfield.php-docblocker",
-        "bmewburn.vscode-intelephense-client",
-        "onecentlin.laravel5-snippets",
-        "onecentlin.laravel-blade",
-        "ryannaddy.laravel-artisan",
-        "mhutchie.git-graph"
-    ],
+		"streetsidesoftware.code-spell-checker",
+		"naumovs.color-highlight",
+		"eamodio.gitlens",
+		"xdebug.php-debug",
+		"bmewburn.vscode-intelephense-client",
+		"shardulm94.trailing-spaces"
+	],
     "remoteUser": "www-data"
 }
